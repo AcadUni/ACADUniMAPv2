@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/acadbg"
+    tools:context=".TimeTables">
+    <Button
+        android:id="@+id/degree"
+        android:layout_width="300dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="@dimen/activity_vertical_margin2"
+        android:background="@drawable/my_button_bg"
+        android:text="Timetables for DEGREE"
+        android:textColor="#FFFFFF"
+        app:layout_constraintHorizontal_weight="0.8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <Button
+        android:id="@+id/diploma"
+        android:layout_width="300dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:background="@drawable/my_button_bg"
+        android:textColor="#FFFFFF"
+        android:text="Timetables for Diploma"
+        app:layout_constraintStart_toStartOf="@+id/degree"
+        app:layout_constraintTop_toBottomOf="@+id/degree" />
+
+</android.support.constraint.ConstraintLayout>

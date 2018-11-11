@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="0dp"
+    android:background="@drawable/acadbg"
+    tools:context="com.elshaikh.mano.acadunimap.MainOptions">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical">
+    <Button
+        android:id="@+id/acadbook"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:background="@drawable/my_button_bg"
+        android:text="Academic Guide Book"
+        android:textColor="@color/btntxtcolor"
+        app:layout_constraintHorizontal_weight="0.8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <Button
+        android:id="@+id/elearning"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:background="@drawable/my_button_bg"
+        android:textColor="@color/btntxtcolor"
+        android:text="E-Learning"
+        app:layout_constraintStart_toStartOf="@+id/acadbook"
+        app:layout_constraintTop_toBottomOf="@+id/acadbook" />
+    <Button
+        android:id="@+id/tt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:background="@drawable/my_button_bg"
+        android:textColor="@color/btntxtcolor"
+        android:text="Class Schedule"
+        app:layout_constraintStart_toStartOf="@+id/elearning"
+        app:layout_constraintTop_toBottomOf="@+id/elearning" />
+
+
+    <Button
+        android:id="@+id/businfo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:background="@drawable/my_button_bg"
+        android:textColor="@color/btntxtcolor"
+        android:text="Bus Tracking System"
+        app:layout_constraintStart_toStartOf="@+id/tt"
+        app:layout_constraintTop_toBottomOf="@+id/tt" />
+    <Button
+        android:id="@+id/locations"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:background="@drawable/my_button_bg"
+        android:textColor="@color/btntxtcolor"
+        android:text="Locations in UniMAP"
+        app:layout_constraintStart_toStartOf="@+id/businfo"
+        app:layout_constraintTop_toBottomOf="@+id/businfo" />
+    <Button
+        android:id="@+id/omr"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:background="@drawable/my_button_bg"
+        android:textColor="@color/btntxtcolor"
+        android:text="Student Evaluation Report"
+        app:layout_constraintStart_toStartOf="@+id/locations"
+        app:layout_constraintTop_toBottomOf="@+id/locations" />
+    </LinearLayout>
+</ScrollView>
+
+</android.support.constraint.ConstraintLayout>

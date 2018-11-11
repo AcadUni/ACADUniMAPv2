@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/acadbg"
+    tools:context="com.elshaikh.mano.acadunimap.SelectSchool">
+
+    <TextView
+        android:id="@+id/schooltxt"
+        android:layout_width="297dp"
+        android:layout_height="37dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="236dp"
+        android:background="#AA000000"
+        android:text="Select School"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/text_size"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/school"
+        android:layout_width="300dp"
+        android:layout_height="@dimen/btn_height"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:background="#CFFFFFFF"
+        android:popupBackground="#CFFFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/schooltxt" />
+
+
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="300dp"
+        android:layout_height="@dimen/btn_height"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/my_button_bg"
+        android:text="SELECT"
+        android:textColor="@color/btntxtcolor"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/school" />
+
+</android.support.constraint.ConstraintLayout>
